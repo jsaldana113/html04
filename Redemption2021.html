@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Redemption2021</title>
+
+<style>
+	@font-face{
+		
+		font-family:"Noah Regular";
+		src: url("fonts/noah-regular.otf") format('truetype')
+	}
+	
+	body,html {
+		
+		margin: 0;
+		font-family: 'Noah Regular', sans-serif;
+		background-image: linear-gradient(#FFFFFF, #588092);
+		background-size: 100% 100%;
+	}
+	
+	.body{
+		font-family: 'Noah Regular', sans-serif;
+		font-variation-settings:"wght" 400;
+		margin: 0px;
+	}
+	
+	.navbar {
+		display: flex;
+		background-color: #15616D;
+		align-items: center;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+	.navbar a{
+		
+		position: relative;
+		float: left;
+		color: white;
+		padding: 34px 27px;
+		display:inline-block;
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		font-size: 22px;
+		
+	}
+	
+	.navbar a::after {
+		
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -8px;
+		transform: translateY(-50%);
+		width: 1px;
+		height: 30%;
+		background-color: white;
+	}
+	
+	.navbar a:hover{
+		
+		background-color: #DDDDDD;
+		color: #15616D;
+	}
+	
+    .image-container img:last-child {
+        margin-right: 0; /* Remove margin from the last image */
+    }
+	
+	
+	.letter-shadow-black {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add drop shadow to letters */
+	}
+	
+	.container {
+		display: flex;
+        width: 100%;
+	}
+	
+	.left {
+        width: 80%;
+		padding-top: 10px;
+        padding-right: 10px;
+		padding-left: 10px;
+        box-sizing: border-box;
+    }
+	
+	.left img{
+		border-radius: 10px;
+		max-width: 100%;
+        height: auto;
+		margin-bottom: 10px;
+        display: block;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+    .right {
+       width:50%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+	
+	.right img {
+		width: 120%;
+		border-radius: 10px;
+        height: auto;
+		margin-left: -60px;
+		margin-bottom: 10px;
+        display: block;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+		height: auto;
+		margin-top: -60px;
+    }
+	
+	.image-container {
+        display: flex; /* Use flexbox to arrange images horizontally */
+		width: 100%
+    }
+	
+	.image-container img {
+		border-radius: 10px;
+        max-width: calc(45% - 10px);
+        height: auto;
+		width: 100%;
+        margin-right: 10px; /* Add some space between images */
+		margin-left: 10px;
+		margin-bottom: 20px;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+	
+	
+	@media (max-width: 786px){
+		.left,.right {
+		width: 100%
+	}
+	}
+	
+	.text-column {
+		flex: 50%;
+		max-width: 50%;
+		padding: 0 4px;
+	}
+	
+	
+	
+	</style>	
+	
+	
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="left img">
+			<img src="images/Redemption booklet.png" alt="Redemption Stationery">
+		</div>
+		<div class="right">
+			<p style="color: #4A6571"><b>Redemption 2021</b><br>
+
+“Redemption 2021” was an exciting and spiritually uplifting college summer retreat that was held in the picturesque setting of South Padre Island, Texas.
+
+This event aimed to provide a unique and transformative experience to college students, offering them a break from their routine and a chance for redemption, rejuvenation, and connection with their faith in a beautiful beach setting.
+
+The design was meant to capture the unique beauty of the beach, while maintaining a cool and bold look that young adults would be happy to wear year-round.
+</p>
+		</div>
+	</div>
+	
+	<div class="container">
+	<div class="image-container img">
+		<img src="images/redemption shirt smaller.png" alt="Redemption t-shirt">
+		<img src="images/Redemption tote smaller.png" alt="Redemption Tote">
+		</div>
+	<div class="right img">
+		<img src="images/redemption cover.png" alt="Redemption Cover">
+		</div>
+	</div>
+	
+	<div class="navbar">
+	<a href="portfoliofinal.html">Home</a>
+	<a href="MyWork.html">My Work</a>
+	<a href="Myservices.html">My Services</a>
+	<a href="Aboutme.html">About Me</a>
+	<a href="Contact.html">Contact</a>	
+	</div>
+	
+	
+</body>
+</html>

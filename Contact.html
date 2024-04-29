@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<style>
+	
+	@font-face{
+		
+		font-family:"Noah Regular";
+		src: url("fonts/noah-regular.otf") format('truetype')
+	}
+	
+	body,html {
+		
+		margin: 0;
+		font-family: 'Noah Regular', sans-serif;
+		background-image: linear-gradient(#FFFFFF, #BE4017);
+		background-size: 100% 100%;
+	}
+	
+	.body{
+		font-family: 'Noah Regular', sans-serif;
+		font-variation-settings:"wght" 400;
+		margin: 0px;
+	}
+	
+	.navbar {
+		display: flex;
+		background-color: #78290F;
+		align-items: center;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+	.navbar a{
+		
+		position: relative;
+		float: left;
+		color: white;
+		padding: 34px 27px;
+		display:inline-block;
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		font-size: 22px;
+		
+	}
+	
+	.navbar a::after {
+		
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -8px;
+		transform: translateY(-50%);
+		width: 1px;
+		height: 30%;
+		background-color: white;
+	}
+	
+	.navbar a:hover{
+		
+		background-color: #DDDDDD;
+		color: #FF7D00;
+	}	
+	
+	form {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	
+	label {
+		display: block;
+		margin-bottom: 5px;
+	}
+	
+	input [type="text"], input[type="email"], select {
+		
+		width: 100%;
+		padding: 10px;
+		margin: 5px 0;
+		box-sizing: border-box;
+	}
+	
+	textarea {
+		
+		width: 100%;
+		padding: 10px;
+		margin: 5px 0;
+		box-sizing: border-box;
+		resize: vertical;
+	}
+	
+	input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+	
+	
+	</style>	
+	
+</head>
+
+<body>
+ <h2 align="center" style="color:#78290F">Contact Form</h2>
+    <form id="contactForm" align="center">
+        <label for="firstName" style="color:#78290F">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+<br><br>
+        <label for="lastName" style="color:#78290F">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+<br><br>
+        <label for="email" style="color:#78290F">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="reason" style="color:#78290F">Reason for Contact:</label>
+        <select id="reason" name="reason" required>
+            <option value="">Select a reason</option>
+            <option value="question">Question</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Support</option>
+			<option value="other">Other</option>
+        </select>
+
+        <label for="message" style="color:#78290F">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <input type="submit" value="Submit">
+	
+    </form>
+
+	<p style="color: white; font-size: 20px" align="center"><b>Thank you for reaching out! I will be in contact with you soon!</b></p><br>
+	<br>
+	
+    <script>
+        // JavaScript for handling form submission
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            var formData = new FormData(this);
+
+            // Optional: You can log the form data to the console
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
+
+            // You can send the form data to a server using AJAX or any other method here
+            // For simplicity, let's just log the success message
+            console.log("Form submitted successfully!");
+        });
+    </script>
+	
+
+	
+	
+	
+<div class="navbar">
+	<a href="portfoliofinal.html">Home</a>
+	<a href="MyWork.html">My Work</a>
+	<a href="Myservices.html">My Services</a>
+	<a href="Aboutme.html">About Me</a>
+	<a href="Contact.html">Contact</a>	
+	</div>			
+	
+	
+	
+	
+	
+	</body>
+</html>

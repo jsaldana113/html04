@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mywork</title>
+<style>
+	@font-face{
+		
+		font-family:"Noah Regular";
+		src: url("fonts/noah-regular.otf") format('truetype')
+	}
+	
+	body,html {
+		
+		margin: 0;
+		font-family: 'Noah Regular', sans-serif;
+		background-image: linear-gradient(#FFFFFF, #001524);
+		background-size: 100% 100%;
+	}
+	
+	.body{
+		font-family: 'Noah Regular', sans-serif;
+		font-variation-settings:"wght" 400;
+		margin: 0px;
+	}
+	
+	.navbar {
+		display: flex;
+		background-color: #001524;
+		align-items: center;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+	.navbar a{
+		
+		position: relative;
+		float: left;
+		color: white;
+		padding: 34px 27px;
+		display:inline-block;
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		font-size: 22px;
+		
+	}
+	
+	.navbar a::after {
+		
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -8px;
+		transform: translateY(-50%);
+		width: 1px;
+		height: 30%;
+		background-color: white;
+	}
+	
+	.navbar a:hover{
+		
+		background-color: #DDDDDD;
+		color: #001524;
+	}
+	
+	.container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+	
+	.image {
+        width: calc(25% - 20px); /* Adjust width as needed */
+        margin: 10px;
+        overflow: hidden;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @media (max-width: 768px) {
+        .image {
+            width: calc(50% - 20px); /* Adjust width as needed for smaller screens */
+        }
+    }
+	
+	
+	@media screen and (max-width:800px) {
+		.row,.navbar{
+			flex-direction: column;
+		}
+	}
+	
+	
+	
+	
+	</style>	
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="image">
+		<a href="Redemption2021.html"><img src="images/redemption.png" alt="Redemption"></a>
+		</div>
+		<div class="image">
+		<a href="Restoration2021.html"><img src="images/restoration design.png" alt="Restoration"></a>
+		</div>
+		<div class="image">
+		<a href="Maturity2022.html"><img src="images/maturity.png" alt="Maturity"></a>
+		</div>
+		<div class="image">
+		<a href="Resolved2022.html"><img src="images/Resolved design Square.png" alt="Resolved"></a>
+		</div>
+		<div class="image">
+		<a href="Unmoved.html"><img src="images/unmoved.png" alt="Unmoved"></a>
+		</div>
+		<div class="image">
+		<a href="LifeinChrist.html"><img src="images/Life in christ design.png" alt="Life in Christ"></a>
+		</div>
+		<div class="image">
+		<a href="Politicaldesignseries.html"><img src="images/victoria.png" alt="Political Design Series"></a>			
+		</div>
+		<div class="image">
+		<a href="StationeryDesign.html"><img src="images/grad square.png" alt="Stationery Series"></a>
+		</div>
+		</div>	
+	
+	
+	<div class="navbar">
+	<a href="portfoliofinal.html">Home</a>
+	<a href="MyWork.html">My Work</a>
+	<a href="Myservices.html">My Services</a>
+	<a href="Aboutme.html">About Me</a>
+	<a href="Contact.html">Contact</a>	
+	</div>
+	
+	
+</body>
+</html>

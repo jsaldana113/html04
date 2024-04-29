@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>StationeryDesign</title>
+<style>
+	
+@font-face{
+		
+		font-family:"Noah Regular";
+		src: url("fonts/noah-regular.otf") format('truetype')
+	}
+	
+	body,html {
+		
+		margin: 0;
+		font-family: 'Noah Regular', sans-serif;
+		background-image: linear-gradient(#FFFFFF, #B2A5B9);
+		background-size: 100% 100%;
+	}
+	
+	.body{
+		font-family: 'Noah Regular', sans-serif;
+		font-variation-settings:"wght" 400;
+		margin: 0px;
+	}
+	
+	.navbar {
+		display: flex;
+		background-color: #554B5A;
+		align-items: center;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	}
+	
+	.navbar a{
+		
+		position: relative;
+		float: left;
+		color: white;
+		padding: 34px 27px;
+		display:inline-block;
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		font-size: 22px;
+		
+	}
+	
+	.navbar a::after {
+		
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -8px;
+		transform: translateY(-50%);
+		width: 1px;
+		height: 30%;
+		background-color: white;
+	}
+	
+	.navbar a:hover{
+		
+		background-color: #DDDDDD;
+		color: #554B5A;
+	}	
+	
+	 .image-container img:last-child {
+        margin-right: 0; /* Remove margin from the last image */
+    }
+	
+	
+	.letter-shadow-black {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add drop shadow to letters */
+	}
+	
+	.container {
+		display: flex;
+	}
+	
+	.left {
+        width: 60%;
+		padding-top: 10px;
+        padding-right: 10px;
+		padding-left: 10px;
+        box-sizing: border-box;
+    }
+	
+	.left img{
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+		max-width: 100%;
+        height: auto;
+		margin-bottom: 10px;
+        display: block;
+		
+
+	}
+	
+    .right {
+       width:40%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+	
+	.right img {
+		width: 100%;
+        height: auto;
+		margin-bottom: 10px;
+        display: block;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+		height: auto;
+    }
+	
+	.image-container {
+        display: flex; /* Use flexbox to arrange images horizontally */
+		width: 100%;
+		overflow-x: hidden;
+		justify-content: center;
+    }
+	
+	.image-container img {
+        max-width:100%;
+        height: auto;
+		width: 100%;
+        margin-right: 10px; /* Add some space between images */
+		margin-left: 10px;
+		margin-bottom: 20px;
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    }
+	
+	
+	@media (max-width: 786px){
+		.left,.right {
+		width: 100%
+	}
+	}
+	
+	.text-column {
+		flex: 50%;
+		max-width: 50%;
+		padding: 0 4px;
+	}
+	
+	.image-grid {
+	margin-bottom: 10px;
+	margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 10px; /* Adjust the gap between images */
+    width: 100%; /* Take up half of the page width */
+    margin: center; /* Center the container horizontally */
+}
+
+.image-grid img {
+	margin-top: 10px;
+	margin-left: 10px;
+    max-width: 100%; /* Ensure images don't exceed the container's width */
+    height: auto; /* Maintain aspect ratio */
+	margin: center;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+	.text-content {
+    width: 50%; /* Take up half of the page width */
+    margin-right: auto; /* Push the text content to the right */
+	margin-left: 10px;
+	flex:1;
+}
+
+.text-content p {
+    /* Add additional styling for your text content if needed */
+    /* For example: */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+	
+	.middle {
+    flex: 1;
+    padding: 0 10px; /* Adjust the padding as needed */
+}
+
+.middle p {
+    color: #4A6571; /* Adjust the color of the text */
+    font-size: 16px; /* Adjust the font size */
+    line-height: 1.5; /* Adjust the line height */
+}
+	
+	</style>		
+	
+	
+</head>
+
+<body>
+	
+<div class="container">
+	<div class="left img">
+	<img src="images/arianna bridal.png" alt="Bridal Shower Invite">
+	</div>
+	<div class="right">
+	<p style="color: #554B5A"><b>Stationery Design</b><br><br>
+
+Curabitur vehicula, elit eu rhoncus mattis, quam elit vestibulum odio, ac facilisis urna metus sed odio. Sed id ante vel turpis tincidunt malesuada. Vestibulum consequat justo a felis tincidunt hendrerit. Duis eget sapien ac 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quam ac augue aliquet, vitae congue felis cursus. Suspendisse potenti. Proin vel justo ac dolor fringilla auctor. Quisque eget dictum turpis. Integer in ultricies libero. Fusce vel dolor a nunc iaculis hendrerit ac ut libero. Mauris eget dui vitae neque vehicula gravida. Vivamus at sem et metus venenatis efficitur.
+</p>
+	</div>
+	</div>	
+	
+<div class="image-grid">
+	<img src="images/grad square.png" alt="Graduation Announcement">
+	<img src="images/rehearsal square.png" alt="Rehearsal Dinner">
+	</div>	
+<div class="image-container">
+	<img src="images/petals.png" alt="Bridal Shower Invite">	
+	</div>
+<div class="container">
+	<div class="left img">
+	<img src="images/reiner card.png" alt="Baby Shower Invite Card">
+	</div>
+	<div class="right img">
+	<img src="images/Stephanie Reiner's Baby Shower Invite.png" alt="Baby Shower Invite">
+	</div>
+	</div>	
+	
+	
+<div class="navbar">
+	<a href="portfoliofinal.html">Home</a>
+	<a href="MyWork.html">My Work</a>
+	<a href="Myservices.html">My Services</a>
+	<a href="Aboutme.html">About Me</a>
+	<a href="Contact.html">Contact</a>	
+	</div>	
+</body>
+</html>
